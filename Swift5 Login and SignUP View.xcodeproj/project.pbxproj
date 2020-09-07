@@ -99,6 +99,9 @@
 		E7686C462506B0C6005D200D /* Swift5 Login and SignUP View */ = {
 			isa = PBXGroup;
 			children = (
+				E7686C792506B13F005D200D /* Model */,
+				E7686C782506B12D005D200D /* View */,
+				E7686C772506B10E005D200D /* Controller */,
 				E7686C472506B0C6005D200D /* AppDelegate.swift */,
 				E7686C492506B0C6005D200D /* SceneDelegate.swift */,
 				E7686C4B2506B0C6005D200D /* ViewController.swift */,
@@ -126,6 +129,27 @@
 				E7686C6B2506B0CA005D200D /* Info.plist */,
 			);
 			path = "Swift5 Login and SignUP ViewUITests";
+			sourceTree = "<group>";
+		};
+		E7686C772506B10E005D200D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7686C782506B12D005D200D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7686C792506B13F005D200D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
