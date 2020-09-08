@@ -30,7 +30,8 @@ class LoginController: UIViewController {
         containerView.backgroundColor = .white
 
         view.addSubview(loginView)
-        loginView.frame = CGRect(x: containerView.bounds.origin.x, y: containerView.bounds.origin.y, width: containerView.bounds.width, height: containerView.bounds.height)
+        loginView.frame = CGRect(x: containerView.bounds.origin.x, y: containerView.bounds.origin.y, width: containerView.bounds.width, height: containerView.bounds.height / 2 - 72)
+                                                                         //下を少し出す
     }
 
 }
