@@ -16,6 +16,8 @@
 		E7686C6A2506B0CA005D200D /* Swift5_Login_and_SignUP_ViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7686C692506B0CA005D200D /* Swift5_Login_and_SignUP_ViewUITests.swift */; };
 		E7686C7B2506B295005D200D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7686C7A2506B295005D200D /* LoginController.swift */; };
 		E7686C7D2506BAFC005D200D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7686C7C2506BAFC005D200D /* LoginView.swift */; };
+		E7A842F72507F1160075EC86 /* AuthenticationLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A842F62507F1160075EC86 /* AuthenticationLabel.swift */; };
+		E7A842F92507F14D0075EC86 /* AuthenticationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A842F82507F14D0075EC86 /* AuthenticationTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E7686C6B2506B0CA005D200D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7686C7A2506B295005D200D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E7686C7C2506BAFC005D200D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E7A842F62507F1160075EC86 /* AuthenticationLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationLabel.swift; sourceTree = "<group>"; };
+		E7A842F82507F14D0075EC86 /* AuthenticationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				E7686C7C2506BAFC005D200D /* LoginView.swift */,
+				E7A842F62507F1160075EC86 /* AuthenticationLabel.swift */,
+				E7A842F82507F14D0075EC86 /* AuthenticationTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -289,6 +295,8 @@
 				E7686C482506B0C6005D200D /* AppDelegate.swift in Sources */,
 				E7686C7B2506B295005D200D /* LoginController.swift in Sources */,
 				E7686C7D2506BAFC005D200D /* LoginView.swift in Sources */,
+				E7A842F92507F14D0075EC86 /* AuthenticationTextField.swift in Sources */,
+				E7A842F72507F1160075EC86 /* AuthenticationLabel.swift in Sources */,
 				E7686C4A2506B0C6005D200D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
