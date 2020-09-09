@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //↑　にsceneを追記　下３行で最初のViewを変更
         window = UIWindow(windowScene: scene)
         window?.makeKeyAndVisible()
-        window?.rootViewController = LoginController()
+        window?.rootViewController = AuthenticationController()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -25,7 +25,7 @@ class AuthenticationTextField: UITextField {
     
     //MARK: - Helpers
     
-    //TextFildにアンダーラインを追加する
+    //TextFildにアンダーラインを追加する     
     override func draw(_ rect: CGRect) {
         let border = CALayer()
         border.frame = CGRect(x: rect.origin.x, y: rect.height - 0.75, width: rect.width, height: 0.75)
