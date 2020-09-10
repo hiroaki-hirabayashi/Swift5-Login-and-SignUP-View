@@ -13,6 +13,7 @@ class AuthenticationController: UIViewController {
     //MARK: - Properties
     let containerView = UIView()
     let loginView = LoginView()
+    let signUpView = SignUpView()
     var showSignUpView = true
     //MARK: - LifeCycle
     
@@ -27,6 +28,9 @@ class AuthenticationController: UIViewController {
         if showSignUpView {
             UIView.animate(withDuration: 0.5, animations: {
                 self.view.frame.origin.y = -self.view.bounds.height + 144
+                self.loginView.rightButton.setImage(#imageLiteral(resourceName: "iconfinder_207-User_2124114"), for: .normal)
+                self.loginView.leftButton.setImage(#imageLiteral(resourceName: "iconfinder_time_1_6095860"), for: .normal)
+                self.loginView.rightButton.contentEdgeInsets = UIEdgeInsets(top: 17, left: 17, bottom: 17, right: 17) //bottonのサイズ
             }) { _ in
                 self.loginView.rightButton.isUserInteractionEnabled = false
                 self.loginView.leftButton.isUserInteractionEnabled = true
@@ -34,7 +38,11 @@ class AuthenticationController: UIViewController {
             }
         } else {
             UIView.animate(withDuration: 0.5, animations: {
-                self.view.frame.origin.y = 0
+                self.containerView.frame.origin.y = 0
+                self.loginView.rightButton.setImage(#imageLiteral(resourceName: "iconfinder_time_1_6095860"), for: .normal)
+                self.loginView.leftButton.setImage(#imageLiteral(resourceName: "iconfinder_user_4172315"), for: .normal)
+                self.loginView.rightButton.contentEdgeInsets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12) //bottonのサイズ
+
             }) { _ in
                 self.loginView.rightButton.isUserInteractionEnabled = true
                 self.loginView.leftButton.isUserInteractionEnabled = false
@@ -45,6 +53,10 @@ class AuthenticationController: UIViewController {
     }
 
     //MARK: - Helpers
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        .lightContent
+    }
     
     func configureUI() {
         view.backgroundColor = .systemRed
@@ -60,6 +72,9 @@ class AuthenticationController: UIViewController {
         loginView.rightButton.addTarget(self, action: #selector(toggleView), for: .touchUpInside)
         loginView.leftButton.addTarget(self, action: #selector(toggleView), for: .touchUpInside)
         loginView.leftButton.isUserInteractionEnabled = false
+        
+        view.addSubview(signUpView)
+        signUpView.frame = CGRect(x: containerView.bounds.origin.x, y: containerView.bounds.height / 2, width: containerView.bounds.width, height: containerView.bounds.height / 2 + 72)
 
     }
 

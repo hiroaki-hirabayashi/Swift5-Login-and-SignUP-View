@@ -9,11 +9,12 @@
 import UIKit
 
 class LoginView: UIView {
+   
     //MARK: - Properties
     
     let titlelLabel: UILabel = {
         let label = UILabel()
-        label.text = "Login"
+        label.text = "ログイン画面"
         label.font = UIFont.boldSystemFont(ofSize: 32)
         label.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         return label
@@ -24,7 +25,7 @@ class LoginView: UIView {
     let emailTextField = AuthenticationTextField(placeholder: "emailアドレスを入力してください")
     let passwordTextField = AuthenticationTextField(placeholder: "パスワードを入力してください", isSequredField: true)
     
-    let loginBotton: UIButton = {
+    let loginButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("ログイン", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
@@ -90,13 +91,13 @@ class LoginView: UIView {
         stack.leftAnchor.constraint(equalTo: leftAnchor, constant: 24).isActive = true
         stack.rightAnchor.constraint(equalTo: rightAnchor, constant: -24).isActive = true
         
-        addSubview(loginBotton)
-        loginBotton.translatesAutoresizingMaskIntoConstraints = false
-        loginBotton.heightAnchor.constraint(equalToConstant: 48).isActive = true
-        loginBotton.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        loginBotton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        loginBotton.topAnchor.constraint(equalTo: stack.bottomAnchor, constant: 30).isActive = true
-        loginBotton.layer.cornerRadius = 40 / 2
+        addSubview(loginButton)
+        loginButton.translatesAutoresizingMaskIntoConstraints = false
+        loginButton.heightAnchor.constraint(equalToConstant: 48).isActive = true
+        loginButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        loginButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        loginButton.topAnchor.constraint(equalTo: stack.bottomAnchor, constant: 30).isActive = true
+        loginButton.layer.cornerRadius = 40 / 2
         
         addSubview(rightButton)
         rightButton.translatesAutoresizingMaskIntoConstraints = false
