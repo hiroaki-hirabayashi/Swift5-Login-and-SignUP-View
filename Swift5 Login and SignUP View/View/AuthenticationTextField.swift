@@ -11,7 +11,7 @@ import UIKit
 class AuthenticationTextField: UITextField {
     
     //MARK: - LifeCycle
-                              //パウワードを隠すか隠さないか
+                              //パスワードを隠すか隠さないか
     init(placeholder: String, isSequredField: Bool? = false) {
         super.init(frame: .zero)
         self.attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColor.lightGray])

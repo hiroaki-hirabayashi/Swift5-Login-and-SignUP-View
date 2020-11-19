@@ -47,8 +47,6 @@ class SignUpView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    
     //MARK: - Helpers
     
     func configureUI() {
@@ -86,8 +84,6 @@ class SignUpView: UIView {
         signUpButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         signUpButton.topAnchor.constraint(equalTo: stack.bottomAnchor, constant: 30).isActive = true
         signUpButton.layer.cornerRadius = 40 / 2
-        
-        
-
+ 
     }
 }
